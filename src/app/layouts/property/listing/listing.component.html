@@ -1,0 +1,9 @@
+<div class="property-list">
+    <h1>Liste des Biens</h1>
+    <div *ngFor="let property of properties" class="property-item">
+      <h3>{{ property.title }}</h3>
+      <p>{{ property.description }}</p>
+      <a [routerLink]="['/properties', property.id]">Voir plus</a>
+    </div>
+  </div>
+  

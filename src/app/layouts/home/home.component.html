@@ -1,0 +1,8 @@
+<div class="home-container">
+  <h1>Annonces Récentes</h1>
+  <div *ngFor="let property of recentProperties" class="property">
+    <h3>{{ property.title }}</h3>
+    <p>{{ property.description }}</p>
+    <a [routerLink]="['/properties', property.id]">Voir plus</a>
+  </div>
+</div>
